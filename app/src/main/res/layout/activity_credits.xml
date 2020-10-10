@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastelLightGreenBlue"
+    tools:context=".Credits">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/appHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="App Development"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/appCredit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appHeading"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/allerta"
+            android:text="Jay Chaudhari"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/datastructureHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appCredit"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Data Structure and Algorithm"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/datastructureCredit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datastructureHeading"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/allerta"
+            android:text="Jayesh Bafana"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/datastructureCredit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datastructureCredit1"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/allerta"
+            android:text="Pranav Dave"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/databaseHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datastructureCredit2"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Database"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/databaseCredit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/databaseHeading"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/allerta"
+            android:text="Diptesh Chaudhari"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        app:icon="@drawable/ic_homeicon"
+        android:text="Home"
+        android:backgroundTint="@color/pastelLightBlue"/>
+
+
+</RelativeLayout>
