@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2"
+    android:padding="5dp"
+    android:background="@color/pastelLightGreenBlue">
+
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/logo1"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:id="@+id/logo"-->
+<!--            android:layout_marginTop="10dp"/>-->
+
+    <RelativeLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:hint="Enter application name" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/searchBar"
+            android:backgroundTint="@color/pastelLightBlue"
+            android:drawableLeft="@drawable/ic_searchicon"
+            android:text="Search"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_addicon"
+        android:backgroundTint="@color/pastelLightBlue"
+        app:backgroundTint="@color/pastelLightBlue"
+        app:rippleColor="@color/pastelLightGreenBlue"
+        android:id="@+id/addBtn"/>
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:id="@+id/card1"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginBottom="100dp"-->
+    <!--        app:cardElevation="10dp">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_centerHorizontal="true"-->
+    <!--                android:text="PHOTOEDITING"-->
+    <!--                android:id="@+id/txtCard1"/>-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="160dp"-->
+    <!--                android:layout_height="150dp"-->
+    <!--                android:layout_centerHorizontal="true"-->
+    <!--                android:layout_below="@+id/txtCard1"-->
+    <!--                android:layout_alignParentBottom="true"-->
+    <!--                android:src="@mipmap/ic_launcher"/>-->
+
+    <!--        </RelativeLayout>-->
+
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/contactsView"
+        android:layout_below="@+id/searchLayout"
+        android:layout_marginTop="40dp"
+
+        />
+
+
+
+
+</RelativeLayout>

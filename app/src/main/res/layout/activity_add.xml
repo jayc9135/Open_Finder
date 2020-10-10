@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:background="@color/pastelPinkBrown"
+    android:padding="20dp"
+    android:id="@+id/parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appreciate"
+        android:id="@+id/appreciate"
+        android:layout_above="@+id/inputLayout"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic|bold"
+        android:textSize="22dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/inputLayout">
+
+    <TextView
+        android:id="@+id/appTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Name:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter app name here"
+        android:layout_below="@+id/appTxt"
+        android:id="@+id/appInput"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alternative:"
+        android:layout_below="@+id/appInput"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:id="@+id/alternateTxt"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter alternative here"
+        android:layout_below="@+id/alternateTxt"
+        android:id="@+id/alternateInput"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Enter"
+        android:backgroundTint="@color/pastelLightBlue"
+        android:id="@+id/enterBtn"/>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        app:icon="@drawable/ic_homeicon"
+        android:text="Home"
+        android:backgroundTint="@color/pastelLightBlue"/>
+
+
+</RelativeLayout>
