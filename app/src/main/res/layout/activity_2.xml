@@ -5,57 +5,33 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity2"
-    android:background="@color/pastelLightGreenBlue"
+    android:background="@drawable/background_6"
     android:fitsSystemWindows="true"
+    tools:context=".Activity2"
     tools:openDrawer="start">
 
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/navView"
+        android:layout_gravity="start"
         app:headerLayout="@layout/header"
-        app:menu="@menu/main_menu"
-        android:layout_gravity="start"/>
+        app:menu="@menu/main_menu" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/pastelLightGreenBlue">
+        android:layout_height="match_parent">
 
         <include
             android:id="@+id/toolbar"
-            layout="@layout/toolbar"/>
+            layout="@layout/toolbar" />
 
-    <RelativeLayout
-        android:id="@+id/searchLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp">
-
-        <SearchView
-            android:id="@+id/mainSearchView"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contactsView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/bg_white_rounded"
-            android:clickable="true"
-            android:iconifiedByDefault="false"
-            android:layout_margin="10dp"
-            android:queryHint="Search Here" />
-
-    </RelativeLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:id="@+id/contactsView"
-        android:layout_below="@+id/searchLayout"
-        android:layout_marginTop="40dp"
-
-        />
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"/>
 
     </RelativeLayout>
 </androidx.drawerlayout.widget.DrawerLayout>

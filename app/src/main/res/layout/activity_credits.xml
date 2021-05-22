@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/pastelLightGreenBlue"
+    android:background="@drawable/background_description"
     tools:context=".Credits">
 
     <RelativeLayout
@@ -39,7 +39,7 @@
             android:layout_below="@id/appCredit"
             android:layout_marginTop="50dp"
             android:fontFamily="@font/alfa_slab_one"
-            android:text="Data Structure and Algorithm"
+            android:text="App Design"
             android:textAlignment="center"
             android:textSize="25sp" />
 
@@ -72,7 +72,7 @@
             android:layout_below="@+id/datastructureCredit2"
             android:layout_marginTop="50dp"
             android:fontFamily="@font/alfa_slab_one"
-            android:text="Database"
+            android:text="Database Research"
             android:textAlignment="center"
             android:textSize="25sp" />
 
@@ -87,6 +87,17 @@
             android:textAlignment="center"
             android:textSize="18sp" />
 
+        <TextView
+            android:id="@+id/databaseCredit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/databaseCredit"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/allerta"
+            android:text="Jayesh Bafana"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
     </RelativeLayout>
 
     <Button
@@ -96,9 +107,11 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        app:icon="@drawable/ic_homeicon"
         android:text="Home"
-        android:backgroundTint="@color/pastelLightBlue"/>
+        android:backgroundTint="#DFD2DA"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_homeicon"
+        android:drawableTint="@color/black"/>
 
 
 </RelativeLayout>

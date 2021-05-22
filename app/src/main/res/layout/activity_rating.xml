@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RatingActivity"
+    android:background="@drawable/background_description"
+    android:id="@+id/parent1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingLayout"
+        android:padding="20dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your name:"
+            android:id="@+id/txtName"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name here"
+            android:layout_below="@+id/txtName"
+            android:id="@+id/enterName"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtStars"
+            android:text="Select the rating:"
+            android:fontFamily="@font/alfa_slab_one"
+            android:layout_below="@+id/enterName"
+            android:layout_marginBottom="20dp"
+            android:textSize="30sp"
+            android:textAlignment="center"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:saveEnabled="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/stars"
+            android:layout_below="@+id/txtStars"
+            android:rating="3.5"
+            android:progressTint="#FEBD2F"
+            android:secondaryProgressTint="#FEBD2F"
+            android:progressBackgroundTint="#DFD2DA"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/suggestionTxt"
+            android:text="Suggestions:"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textSize="30sp"
+            android:layout_below="@id/stars"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/suggestionBox"
+            android:layout_below="@id/suggestionTxt"
+            android:hint="Do you have any suggestions for us?"
+            android:textAlignment="textStart"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Enter"
+        android:backgroundTint="#DFD2DA"
+        android:id="@+id/enterBtn"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Home"
+        android:backgroundTint="#DFD2DA"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_homeicon"/>
+
+
+</RelativeLayout>

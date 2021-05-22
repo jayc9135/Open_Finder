@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_rounded"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/descritptionImage"
+        android:layout_margin="5dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:layout_below="@+id/descritptionImage"
+        android:text="Heading"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_below="@+id/heading"
+        android:text="Info"
+
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSourcelink"
+        android:textSize="20sp"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="20dp"
+        android:text="SourceCode: "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sourcecode"
+        android:layout_toRightOf="@+id/txtSourcelink"
+        android:layout_below="@id/description"
+        android:textSize="20sp"
+        android:text="link1"
+        android:layout_marginTop="20dp"
+        android:autoLink="web"
+        android:clickable="true"
+        android:textColor="#0645AD"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtdownloadlink"
+        android:textSize="20sp"
+        android:layout_below="@+id/sourcecode"
+        android:layout_marginTop="20dp"
+        android:text="Download Link: "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/downloadlink"
+        android:layout_toRightOf="@+id/txtdownloadlink"
+        android:layout_below="@id/sourcecode"
+        android:textSize="20sp"
+        android:text="link2"
+        android:layout_marginTop="20dp"
+        android:autoLink="web"
+        android:clickable="true"
+        android:textColor="#0645AD"/>
+
+
+</RelativeLayout>

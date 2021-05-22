@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="15dp"
+    android:background="@drawable/bg_white_rounded">
+
+    <TextView
+        android:id="@+id/txtPaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/allerta"
+        android:text="Paid app"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPaid">
+
+        <TextView
+            android:id="@+id/txtAlternative1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/allerta"
+            android:text="alternative1"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/txtAlternative2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/allerta"
+            android:text="alternative2"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/txtAlternative3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta"
+            android:text="alternative3"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
